@@ -1,0 +1,73 @@
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Values */
+body {
+  background: gray;
+  font-family: 'helvetica', 'sans-serif'; }
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.text-center {
+  text-align: center; }
+
+.container {
+  background: #fff;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* Navigation */
+.logo {
+  padding-top: 10px;
+  width: 300px; }
+
+.navbar {
+  padding: 15px 0 0 0; }
+
+nav {
+  width: 100%;
+  background: #fff;
+  height: 100px;
+  text-align: center; }
+
+nav ul {
+  list-style-type: none;
+  padding-top: 25px; }
+
+nav ul li {
+  display: inline; }
+
+nav ul li a {
+  padding: 30px;
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red; }
+
+nav ul li a:hover {
+  color: black; }
+
+.slides {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
