@@ -21,8 +21,11 @@ body {
 }
 .container {
   background: #fff;
-  @include outer-container;
+  @include row;
   display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Navigation */
@@ -60,4 +63,23 @@ nav ul li a:hover {
 
 .slides {
   width: 100%;
+}
+
+.flex-control-nav li a {
+width: 11px;
+height: 11px;
+background: #fff;
+top: 0;
+}
+
+.four {
+  @include span-columns(4);
+}
+.four img {
+  width: 100%;
+  }
+footer {
+  @include row;
+  background-color: #fff;
+  height: 300px;
 }

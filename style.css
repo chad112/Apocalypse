@@ -27,10 +27,11 @@ body {
 
 .container {
   background: #fff;
-  max-width: 68em;
+  display: block;
+  display: block;
+  width: 70%;
   margin-left: auto;
-  margin-right: auto;
-  display: block; }
+  margin-right: auto; }
   .container:after {
     content: "";
     display: table;
@@ -69,5 +70,31 @@ nav ul li a:hover {
 
 .slides {
   width: 100%; }
+
+.flex-control-nav li a {
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  top: 0; }
+
+.four {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .four:last-child {
+    margin-right: 0; }
+
+.four img {
+  width: 100%; }
+
+footer {
+  display: block;
+  background-color: #fff;
+  height: 300px; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /*# sourceMappingURL=style.css.map */
