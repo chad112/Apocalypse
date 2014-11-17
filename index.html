@@ -5,6 +5,8 @@
 <link rel="stylesheet" type="text/css" href="reset.css">
 <link rel="stylesheet" type="text/css" href="flexslider.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="//use.typekit.net/dgb4rxe.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -18,6 +20,7 @@
         <li> <a href="#"> Beer </a> </li>
         <li> <a href="#"> Store </a> </li>
         <li> <a href="#"> About </a> </li>
+        <li> <a href="#"> Contact </a> </li>
       </ul>
     </nav>
   </div>
@@ -38,26 +41,23 @@
     </li>
   </ul>
 </div>
-    <h1> The Apocalpyse Has Begun! </h1>
-    <p>
-The meaning of apocalypse is the end for a new beginning. The end of bad beer is here!<br>
+    <h1 class="text-center title"> The Apocalpyse Has Begun! </h1>
+    <hr>
+      <h2 class="text-center subtitle"><i>The meaning of apocalypse is the end for a new beginning. The end of bad beer is here!</i></h2>
+        <p>
 Apocalypse Ale Works is the first brewery in Forest, Virginia since Thomas Jefferson brewed in the 1800's at Poplar Forest.
 In addition to a brewery, we will also have a tasting room, where the public can try our products. We are located in the old Forest Volunteer Fire Department,
 beside Pints O'Plenty. Production starts in the beginning of January, and the tasting room will be open by the beginning of February.
 The brewery will sell kegs all over the state of Virginia, with an emphasis on supplying the local restaurants first. Eventually we will expand to bottling our beer.
 Our mission is to brew quality beer for all palates. The end of bad beer is here!
   </div>
-<footer>
-  <div class="four">
-    <img src="http://www.placehold.it/400x100">
-  </div>
-  <div class="four">
-    <img src="http://www.placehold.it/400x100">
-  </div>
-  <div class="four">
-    <img src="http://www.placehold.it/400x100">
-  </div>
-</footer>
+<div id="footer-container">
+</div>
+<script>
+$( document ).ready(function() {
+          $("#footer-container"). load("footer.html");
+        });
+        </script>
 <script>
 $(window).load(function() {
   $('.flexslider').flexslider({

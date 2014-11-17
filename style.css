@@ -13,9 +13,25 @@ html {
   box-sizing: inherit; }
 
 /* Values */
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+h2 {
+  font-size: 25px; }
+
+p {
+  text-indent: 30px;
+  font-size: 18px;
+  padding: 20px; }
+
+.subtitle {
+  font-style: italic; }
+
 body {
-  background: gray;
-  font-family: 'helvetica', 'sans-serif'; }
+  background: url("img/background.jpg") no-repeat center center fixed;
+  font-family: 'futura-pt', 'sans-serif'; }
 
 .center-block {
   margin-left: auto;
@@ -43,7 +59,8 @@ body {
   width: 300px; }
 
 .navbar {
-  padding: 15px 0 0 0; }
+  padding: 15px 0 0 0;
+  border-bottom: 5px solid gray; }
 
 nav {
   width: 100%;
@@ -53,48 +70,79 @@ nav {
 
 nav ul {
   list-style-type: none;
-  padding-top: 25px; }
+  padding-top: 30px; }
 
 nav ul li {
   display: inline; }
 
 nav ul li a {
+  font-weight: 800;
   padding: 30px;
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
   text-transform: uppercase;
-  color: red; }
+  color: #632828; }
 
 nav ul li a:hover {
   color: black; }
 
 .slides {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: -30px; }
 
 .flex-control-nav li a {
   width: 11px;
   height: 11px;
   background: #fff;
-  top: 0; }
+  top: 0;
+  display: none; }
 
-.four {
+.title {
+  margin-top: -30px;
+  padding-bottom: 10px; }
+
+.six {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
-  .four:last-child {
+  width: 48.82117%; }
+  .six:last-child {
     margin-right: 0; }
 
 .four img {
   width: 100%; }
 
-footer {
-  display: block;
+.footer {
   background-color: #fff;
-  height: 300px; }
-  footer:after {
-    content: "";
-    display: table;
-    clear: both; }
+  height: 260px;
+  border-top: 5px solid gray; }
+
+form input {
+  width: 400px;
+  display: block;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+textarea {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: -10px; }
+
+.submit-button {
+  height: 30px;
+  width: 80px;
+  margin-left: 185px; }
+
+.footer-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */

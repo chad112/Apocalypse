@@ -2,14 +2,29 @@
 @import "neat/neat";
 
 /* Values */
-$largest:50px;
+$largest:40px;
 
 
 
-
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  text-indent: 30px;
+  font-size: 18px;
+  padding: 20px;
+}
+.subtitle {
+  font-style: italic;
+}
 body {
-  background: gray;
-  font-family: 'helvetica', 'sans-serif';
+  background: url('img/background.jpg') no-repeat center center fixed;
+  font-family: 'futura-pt', 'sans-serif';
 }
 .center-block {
   margin-left: auto;
@@ -35,6 +50,7 @@ body {
 }
 .navbar {
   padding: 15px 0 0 0;
+  border-bottom: 5px solid gray;
 }
 nav {
   width: 100%;
@@ -44,17 +60,18 @@ nav {
   }
 nav ul {
 list-style-type: none;
-padding-top: 25px;
+padding-top: 30px;
 }
 nav ul li {
   display: inline;
 }
 nav ul li a {
+  font-weight: 800;
   padding: 30px;
   font-size: $largest;
   text-decoration: none;
   text-transform: uppercase;
-  color: red;
+  color: #632828;
 }
 
 nav ul li a:hover {
@@ -63,6 +80,7 @@ nav ul li a:hover {
 
 .slides {
   width: 100%;
+  margin-bottom: -30px;
 }
 
 .flex-control-nav li a {
@@ -70,16 +88,49 @@ width: 11px;
 height: 11px;
 background: #fff;
 top: 0;
+display: none;
 }
-
-.four {
-  @include span-columns(4);
+.title {
+  margin-top: -30px;
+  padding-bottom: 10px;
+}
+.six {
+  @include span-columns(6);
 }
 .four img {
   width: 100%;
   }
-footer {
-  @include row;
+.footer {
   background-color: #fff;
-  height: 300px;
+  height: 260px;
+  border-top: 5px solid gray;
+}
+
+form input{
+  width: 400px;
+  display: block;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: -10px;
+}
+.submit-button {
+  height: 30px;
+  width: 80px;
+  margin-left: 185px;
+}
+.footer-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

@@ -1,0 +1,62 @@
+<div class="footer">
+	<div class="footer-container">
+
+	<div class="six">
+		<div class="text-center">
+			<img src="img/sm/facebook.png">
+			<img src="img/sm/facebook.png">
+		</div>
+	</div>
+
+	<div class="six contact">
+			<h1 class="text-center"> Contact </h1>
+			<div id="contact-area" class="center-block">
+				<form method="post" name="myForm" onsubmit="return validateForm();"action="contactengine.php">
+					<input placeholder="First / Last name"type="text" name="Name" id="Name" />
+
+					<input placeholder="Email"type="text" name="Email" id="Email" />
+					<br />
+					<textarea placeholder="Message" name="Message" rows="5" cols="5" id="Message"></textarea>
+
+					<input type="submit" name="Submit" value="Submit" class="submit-button" />
+				</form>
+			</div>
+
+	</div>
+</div>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["Email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        swal("Error", "Not a valid email address" , "error");
+        return false;
+    }
+    var x = document.forms["myForm"]["Name"].value;
+    if (x == null || x == "") {
+        swal("Error" ,"Your name must be filled out!" , "error");
+        return false;
+    }
+    var x = document.forms["myForm"]["Message"].value;
+    if (x == null || x == "") {
+        swal("Error" ,"Don't you want to leave a message?" , "error");
+        return false;
+    }
+}
+</script>
+	<script src="lib/sweet-alert.min.js"></script>
+	<script src="notify.js"></script>
+<script>
+if(window.location.hash == '#success')
+{
+$.notify("Thank you for your email! We'll be in contact shortly.", "success");
+}
+if(window.location == '#error')
+{
+$.notify("I'm sorry, your email was not sent. Please try again.", "error");
+}
+</script>
+
+</div>
