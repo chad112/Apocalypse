@@ -20,7 +20,7 @@
         <li> <a href="#"> Beer </a> </li>
         <li> <a href="#"> Store </a> </li>
         <li> <a href="#"> About </a> </li>
-        <li> <a href="#"> Contact </a> </li>
+        <li> <a href="#top" id="top"> Contact </a> </li>
       </ul>
     </nav>
   </div>
@@ -50,9 +50,30 @@ In addition to a brewery, we will also have a tasting room, where the public can
 beside Pints O'Plenty. Production starts in the beginning of January, and the tasting room will be open by the beginning of February.
 The brewery will sell kegs all over the state of Virginia, with an emphasis on supplying the local restaurants first. Eventually we will expand to bottling our beer.
 Our mission is to brew quality beer for all palates. The end of bad beer is here!
+<hr>
+<h1 class="text-center"> News </h1>
+<p> News news news </p>
   </div>
-<div id="footer-container">
+<div id="footer-container" name="top">
 </div>
+
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
 <script>
 $( document ).ready(function() {
           $("#footer-container"). load("footer.html");

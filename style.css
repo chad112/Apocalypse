@@ -16,7 +16,7 @@ html {
 h1 {
   font-size: 30px;
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 700; }
 
 h2 {
   font-size: 25px; }
@@ -24,7 +24,7 @@ h2 {
 p {
   text-indent: 30px;
   font-size: 18px;
-  padding: 20px; }
+  padding: 15px 35px; }
 
 .subtitle {
   font-style: italic; }
@@ -60,17 +60,17 @@ body {
 
 .navbar {
   padding: 15px 0 0 0;
-  border-bottom: 5px solid gray; }
+  border-bottom: 3px solid gray; }
 
 nav {
   width: 100%;
-  background: #fff;
-  height: 100px;
+  background: #313131;
+  height: 80px;
   text-align: center; }
 
 nav ul {
   list-style-type: none;
-  padding-top: 30px; }
+  padding-top: 25px; }
 
 nav ul li {
   display: inline; }
@@ -78,17 +78,18 @@ nav ul li {
 nav ul li a {
   font-weight: 800;
   padding: 30px;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #632828; }
+  color: #fff; }
 
 nav ul li a:hover {
   color: black; }
 
 .slides {
   width: 100%;
-  margin-bottom: -30px; }
+  margin-bottom: -30px;
+  border: none; }
 
 .flex-control-nav li a {
   width: 11px;
@@ -101,21 +102,23 @@ nav ul li a:hover {
   margin-top: -30px;
   padding-bottom: 10px; }
 
-.six {
+.four {
+  padding-top: 10px;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
-  .six:last-child {
+  width: 31.76157%; }
+  .four:last-child {
     margin-right: 0; }
 
-.four img {
-  width: 100%; }
+.sm-icons {
+  padding: 15px;
+  margin-top: 10px; }
 
 .footer {
   background-color: #fff;
   height: 260px;
-  border-top: 5px solid gray; }
+  border-top: 3px solid gray; }
 
 form input {
   width: 400px;
@@ -132,15 +135,23 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: -10px; }
+  margin-top: -15px;
+  resize: none; }
 
 .submit-button {
   height: 30px;
   width: 80px;
-  margin-left: 185px; }
+  margin-left: 25px; }
 
 .footer-container {
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+hr {
+  width: 90%;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   display: block; }
