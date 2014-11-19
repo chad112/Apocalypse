@@ -12,6 +12,11 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
 /* Values */
 h1 {
   font-size: 30px;
@@ -31,6 +36,7 @@ p {
 
 body {
   background: url("img/background.jpg") no-repeat center center fixed;
+  background-color: black;
   font-family: 'futura-pt', 'sans-serif'; }
 
 .center-block {

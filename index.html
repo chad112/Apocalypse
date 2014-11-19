@@ -20,7 +20,7 @@
         <li> <a href="#"> Beer </a> </li>
         <li> <a href="#"> Store </a> </li>
         <li> <a href="#"> About </a> </li>
-        <li> <a href="#top" id="top"> Contact </a> </li>
+        <li> <a href="#contact"> Contact </a> </li>
       </ul>
     </nav>
   </div>
@@ -54,25 +54,10 @@ Our mission is to brew quality beer for all palates. The end of bad beer is here
 <h1 class="text-center"> News </h1>
 <p> News news news </p>
   </div>
-<div id="footer-container" name="top">
+<div id="footer-container">
 </div>
+<a name="contact"></a>
 
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 800);
-        return false;
-      }
-    }
-  });
-});
-</script>
 
 <script>
 $( document ).ready(function() {
