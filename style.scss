@@ -9,6 +9,7 @@ input::-moz-focus-inner {
 
 $break-large: 1000px;
 $break-nav:840px;
+$break-small: 600px;
 
 /* Values */
 $largest:30px;
@@ -214,11 +215,21 @@ display: none;
 .four {
   padding-top: 10px;
   @include span-columns(4);
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+    padding: 20px;
+  }
 }
 .sm-icons {
   padding: 15px;
   margin-top: 10px;
   transition: 0.5s ease;
+  @media screen and (max-width: $break-nav) {
+    width: 49%;
+    padding: 0;  }
+  @media screen and (max-width: $break-small) {
+    width: 20%;
+  }
 }
 .sm-icons:hover {
   opacity: .8;
@@ -227,6 +238,9 @@ display: none;
   background-color: #fff;
   height: 260px;
   border-top: 3px solid gray;
+  @media screen and (max-width: $break-small) {
+    height: 800px;
+  }
 }
 
 form input{

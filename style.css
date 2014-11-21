@@ -210,11 +210,22 @@ nav ul li a:hover {
   width: 31.76157%; }
   .four:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    .four {
+      width: 100%;
+      padding: 20px; } }
 
 .sm-icons {
   padding: 15px;
   margin-top: 10px;
   transition: 0.5s ease; }
+  @media screen and (max-width: 840px) {
+    .sm-icons {
+      width: 49%;
+      padding: 0; } }
+  @media screen and (max-width: 600px) {
+    .sm-icons {
+      width: 20%; } }
 
 .sm-icons:hover {
   opacity: .8; }
@@ -223,6 +234,9 @@ nav ul li a:hover {
   background-color: #fff;
   height: 260px;
   border-top: 3px solid gray; }
+  @media screen and (max-width: 600px) {
+    .footer {
+      height: 800px; } }
 
 form input {
   width: 100%;
