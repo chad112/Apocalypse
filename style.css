@@ -280,13 +280,16 @@ hr {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  width: 50%;
-  padding: 10px;
+  width: 49%;
   margin-left: auto;
   margin-right: auto;
-  display: block; }
+  display: block;
+  position: static; }
   .five:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 840px) {
+    .five {
+      width: 98%; } }
 
 .five p {
   text-indent: 0;
@@ -298,5 +301,38 @@ hr {
   margin-right: auto;
   display: block;
   text-align: center; }
+
+.page-title {
+  font-size: 60px;
+  text-align: center;
+  padding: 15px; }
+
+.column {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: 0 auto; }
+  .column:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* About Page */
+.about-text {
+  padding: 10px 200px;
+  font-size: 25px;
+  text-indent: 0; }
+  @media screen and (max-width: 1400px) {
+    .about-text {
+      padding: 10px 10px; } }
+
+.about-seal {
+  padding: 10px;
+  width: 80%; }
+  @media screen and (max-width: 840px) {
+    .about-seal {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
