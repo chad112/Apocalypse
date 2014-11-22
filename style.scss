@@ -279,3 +279,25 @@ hr {
   margin-right: auto;
   display: block;
 }
+
+/* Beer Page */
+
+.five {
+  @include span-columns(6);
+  width: 50%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.five p {
+  text-indent: 0;
+  padding: 30px;
+}
+.five img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
