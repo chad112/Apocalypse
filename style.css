@@ -322,7 +322,7 @@ hr {
 /* About Page */
 .about-text {
   padding: 10px 200px;
-  font-size: 25px;
+  font-size: 20px;
   text-indent: 0; }
   @media screen and (max-width: 1400px) {
     .about-text {
