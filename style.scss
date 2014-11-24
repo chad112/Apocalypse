@@ -20,9 +20,11 @@ h1 {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #fff;
 }
 h2 {
   font-size: 25px;
+  color:#fff;
   @media screen and (max-width: $break-nav) {
     padding: 30px;
   }
@@ -31,6 +33,7 @@ p {
   text-indent: 30px;
   font-size: 18px;
   padding: 15px 35px;
+  color: #fff;
 }
 .subtitle {
   font-style: italic;
@@ -49,7 +52,7 @@ body {
   text-align: center;
 }
 .container {
-  background: #fff;
+  background: #171717;
   @include row;
   display: block;
   width: 70%;
@@ -75,7 +78,7 @@ body {
 }
 nav {
   width: 100%;
-  background: #313131;
+  background: #171717;
   height: 80px;
   text-align: center;
   @media screen and (max-width: $break-nav) {
@@ -107,7 +110,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: black;
+  color: #79211a;
 }
 
 .slides {
@@ -119,6 +122,10 @@ nav ul li a:hover {
   }
 }
 .flexslider {
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin: 0px;
   @media screen and (max-width: $break-nav) {
     display: none;
   }
@@ -220,6 +227,9 @@ display: none;
     padding: 20px;
   }
 }
+.four h1 {
+  color: #171717;
+}
 .sm-icons {
   padding: 15px;
   margin-top: 10px;
@@ -238,6 +248,7 @@ display: none;
   background-color: #fff;
   height: 260px;
   border-top: 3px solid gray;
+  opacity: .8;
   @media screen and (max-width: $break-small) {
     height: 800px;
   }
@@ -264,7 +275,7 @@ textarea {
 .submit-button {
   height: 30px;
   width: 80px;
-  margin-left: 25px;
+  margin-left: 0;
 }
 .footer-container {
   width: 70%;
@@ -322,7 +333,7 @@ hr {
 
 /* About Page */
 .about-text {
-  padding: 10px 200px;
+  padding: 10px 140px;
   font-size: 20px;
   text-indent: 0;
   @media screen and (max-width: 1400px) {
