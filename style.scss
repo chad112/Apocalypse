@@ -430,6 +430,7 @@ hr {
   color: white;
   padding-bottom: 10px;
   -webkit-transition: 0.5s ease;
+  text-transform: uppercase;
 }
 .about-portrait-label:hover{
   color: #79211a;
@@ -444,7 +445,16 @@ hr {
 }
 .about-portrait {
   max-width: 400px;
-  padding-bottom: 10px;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  align: left;
+}
+
+.about-body {
+  color: white;
+  font-size: 20px;
+  text-indent: 0;
 }
 
 .hours {
