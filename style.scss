@@ -421,7 +421,7 @@ hr {
   }
 }
 .about-individual-container {
-  padding:10px 140px;
+  padding:10px 40px;
 }
 .about-portrait-link {
   text-decoration: none;
@@ -449,6 +449,10 @@ hr {
   padding-bottom: 0;
   margin-bottom: 0;
   align: left;
+  @media screen and (max-width: $break-nav) {
+    width: 200px;
+    padding-bottom: 10px;
+  }
 }
 
 .about-body {
