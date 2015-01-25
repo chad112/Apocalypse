@@ -45,6 +45,9 @@ body {
   background: url("img/background.jpg") no-repeat center center fixed;
   background-color: black;
   font-family: 'futura-pt', 'sans-serif'; }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    body {
+      background: url("img/background.jpg") no-repeat top center fixed; } }
 
 .center-block {
   margin-left: auto;
@@ -244,7 +247,7 @@ nav ul li a:hover {
     max-height: none; }
 
   .nav-toggle {
-    display: none; } }
+    display: block; } }
 /* End Nav */
 .title {
   margin-top: -30px;
@@ -301,7 +304,7 @@ nav ul li a:hover {
   opacity: .8; }
   @media screen and (max-width: 600px) {
     .footer {
-      height: 800px; } }
+      height: 700px; } }
   @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     .footer {
       height: 1300px; } }
@@ -389,6 +392,9 @@ hr {
   font-size: 60px;
   text-align: center;
   padding: 15px; }
+  @media screen and (max-width: 840px) {
+    .page-title {
+      font-size: 40px; } }
 
 .column {
   display: block;
@@ -406,13 +412,19 @@ hr {
 .about-text {
   padding: 10px 140px;
   font-size: 20px;
-  text-indent: 0; }
+  text-indent: 0;
+  margin: 20px; }
   @media screen and (max-width: 1400px) {
     .about-text {
       padding: 10px 10px; } }
 
 .about-individual-container {
-  padding: 10px 40px; }
+  padding: 10px 40px;
+  position: relative;
+  margin: 20px; }
+  @media screen and (max-width: 840px) {
+    .about-individual-container {
+      padding: 10px; } }
 
 .about-portrait-link {
   text-decoration: none; }
@@ -420,11 +432,11 @@ hr {
 .about-portrait-label {
   color: white;
   padding-bottom: 10px;
-  -webkit-transition: 0.5s ease;
-  text-transform: uppercase; }
-
-.about-portrait-label:hover {
-  color: #79211a; }
+  font-size: 30px; }
+  @media screen and (max-width: 600px) {
+    .about-portrait-label {
+      padding: 10px;
+      text-align: center; } }
 
 .about-seal {
   padding: 10px;
@@ -435,7 +447,7 @@ hr {
       width: 100%; } }
 
 .about-portrait {
-  max-width: 400px;
+  max-width: 250px;
   padding: 15px;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -444,14 +456,24 @@ hr {
     .about-portrait {
       width: 200px;
       padding-bottom: 10px; } }
+  @media screen and (max-width: 600px) {
+    .about-portrait {
+      margin: 0;
+      width: 200px; } }
 
 .about-body {
   color: white;
   font-size: 20px;
   text-indent: 0; }
+  @media screen and (max-width: 840px) {
+    .about-body {
+      padding: 0; } }
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .hours {
     font-size: 25px; } }
+
+.data-scroll {
+  -webkit-transition: ease .5s; }
 
 /*# sourceMappingURL=style.css.map */

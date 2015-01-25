@@ -43,6 +43,9 @@ body {
   background: url('img/background.jpg') no-repeat center center fixed;
   background-color: black;
   font-family: 'futura-pt', 'sans-serif';
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    background: url('img/background.jpg') no-repeat top center fixed;
+  }
 }
 .center-block {
   margin-left: auto;
@@ -209,6 +212,7 @@ display: none;
   display: block;
   overflow: hidden;
   zoom: 1;
+
 }
 
 .nav-collapse.opened {
@@ -235,7 +239,6 @@ display: none;
   width: 40px;
   position: absolute;
   margin-top: -50px;
-
 }
 
 @media screen and (min-width: $break-nav) {
@@ -259,7 +262,7 @@ display: none;
     max-height: none;
   }
   .nav-toggle {
-    display: none;
+    display: block;
   }
 }
 /* End Nav */
@@ -311,7 +314,7 @@ display: none;
   border-top: 3px solid gray;
   opacity: .8;
   @media screen and (max-width: $break-small) {
-    height: 800px;
+    height: 700px;
   }
   @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     height: 1300px;
@@ -400,6 +403,9 @@ hr {
   font-size: 60px;
   text-align: center;
   padding: 15px;
+  @media screen and (max-width: $break-nav) {
+    font-size: 40px;
+  }
 }
 
 .column {
@@ -416,12 +422,18 @@ hr {
   padding: 10px 140px;
   font-size: 20px;
   text-indent: 0;
+  margin: 20px;
   @media screen and (max-width: 1400px) {
     padding: 10px 10px;
   }
 }
 .about-individual-container {
   padding:10px 40px;
+  position: relative;
+  margin: 20px;
+  @media screen and (max-width: $break-nav) {
+    padding: 10px;
+  }
 }
 .about-portrait-link {
   text-decoration: none;
@@ -429,11 +441,11 @@ hr {
 .about-portrait-label {
   color: white;
   padding-bottom: 10px;
-  -webkit-transition: 0.5s ease;
-  text-transform: uppercase;
-}
-.about-portrait-label:hover{
-  color: #79211a;
+  font-size: 30px;
+  @media screen and (max-width: $break-small) {
+    padding: 10px;
+    text-align: center;
+  }
 }
 .about-seal {
   padding: 10px;
@@ -444,7 +456,7 @@ hr {
   }
 }
 .about-portrait {
-  max-width: 400px;
+  max-width: 250px;
   padding: 15px;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -453,16 +465,28 @@ hr {
     width: 200px;
     padding-bottom: 10px;
   }
+  @media screen and (max-width: $break-small) {
+    margin: 0;
+    width: 200px;
+
+  }
 }
 
 .about-body {
   color: white;
   font-size: 20px;
   text-indent: 0;
+  @media screen and (max-width: $break-nav) {
+    padding: 0;
+  }
 }
 
 .hours {
   @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
       font-size: 25px;
   }
+}
+
+.data-scroll {
+  -webkit-transition: ease .5s;
 }
