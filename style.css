@@ -458,8 +458,9 @@ hr {
       padding-bottom: 10px; } }
   @media screen and (max-width: 600px) {
     .about-portrait {
-      margin: 0;
-      width: 200px; } }
+      margin: 10px 85px;
+      width: 280px;
+      text-align: center; } }
 
 .about-body {
   color: white;
@@ -473,7 +474,17 @@ hr {
   .hours {
     font-size: 25px; } }
 
-.data-scroll {
-  -webkit-transition: ease .5s; }
+.store-img {
+  padding: 20px; }
+
+.disqus-thread {
+  position: relative;
+  display: block;
+  color: gray; }
+
+#dsq-2 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0px 15px; }
 
 /*# sourceMappingURL=style.css.map */
