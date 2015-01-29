@@ -2,14 +2,28 @@
 <div class="navbar">
 <nav class="nav-collapse">
   <ul>
-    <li> <a href="index.html"> Home </a> </li>
-    <li> <a href="beer.html"> Beer </a> </li>
-    <li> <a href="store.html"> Store </a> </li>
-    <li> <a href="about.html"> About </a> </li>
+    <li> <a id="news"href="#"> Home </a> </li>
+    <li> <a id="beer" href="#"> Beer </a> </li>
+    <!--<li> <a id="store"href="#"> Store </a> </li>-->
+    <li> <a id="about"href="#"> About </a> </li>
     <li> <a data-scroll href="#contact"> Contact </a> </li>
   </ul>
 </nav>
 </div>
+<script>
+$('#beer').click(function(){
+  $('#main-container').load('beer.html');
+});
+$('#store').click(function(){
+  $('#main-container').load('store.html');
+});
+$('#about').click(function(){
+  $('#main-container').load('about.html');
+});
+$('#news').click(function(){
+  $('#main-container').load('news.html');
+});
+</script>
 <script>
 var nav = responsiveNav(".nav-collapse", { // Selector
   animate: true, // Boolean: Use CSS3 transitions, true or false
@@ -17,7 +31,7 @@ var nav = responsiveNav(".nav-collapse", { // Selector
   label: "Menu", // String: Label for the navigation toggle
   insert: "before", // String: Insert the toggle before or after the navigation
   customToggle: "", // Selector: Specify the ID of a custom toggle
-  closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+  closeOnNavClick: true, // Boolean: Close the navigation when one of the links are clicked
   openPos: "relative", // String: Position of the opened nav, relative or static
   navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
   navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active

@@ -16,87 +16,7 @@
 
     <div id="nav-container">
     </div>
-  <div class="container">
-    <div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="img/taps.jpg" />
-    </li>
-    <li>
-      <img src="img/douggy.jpg" />
-    </li>
-    <li>
-      <img src="img/douggy2.jpg" />
-    </li>
-    <li>
-      <img src="img/hops.jpg" />
-    </li>
-    <li>
-      <img src="img/canisters.jpg" />
-    </li>
-    <li>
-      <img src="img/malt.jpg" />
-    </li>
-    <li>
-      <img src="img/kegs.jpg" />
-    </li>
-  </ul>
-</div>
-    <h1 class="text-center title"> The Apocalpyse Has Begun! </h1>
-    <hr>
-      <h2 class="text-center subtitle"><i>The meaning of apocalypse is the end for a new beginning. The end of bad beer is here!</i></h2>
-        <p>
-Apocalypse Ale Works is the first brewery in Forest, Virginia since Thomas Jefferson brewed in the 1800's at Poplar Forest.
-In addition to a brewery, we will also have a tasting room, where the public can try our products. We are located in the old Forest Volunteer Fire Department,
-beside Pints O'Plenty. Production starts in the beginning of January, and the tasting room will be open by the beginning of February.
-The brewery will sell kegs all over the state of Virginia, with an emphasis on supplying the local restaurants first. Eventually we will expand to bottling our beer.
-Our mission is to brew quality beer for all palates. The end of bad beer is here!
-<hr>
-<h1 class="text-center"> News </h1>
-<p> Production starts in the beginning of January, and the tasting room will be open by the beginning of February. The brewery will sell kegs all over the state of Virginia, with an emphasis on supplying the local restaurants first. Eventually we will expand to canning and bottling our beer. Our mission is to brew quality beer for all palates. </p>
-<p class="subtitle">Following the launch of our tasting room, we will be launching our beer in cans this summer!  Here's a sneak peek!  </p>
-<div class="column">
-<div class="five">
-<h1 class="text-center news-title"> Glorious Dead </h1>
-<h3 class="subtitle text-center"> English Amber Ale </h3>
-<hr>
-<img src="img/glorious-can.jpg">
-</div>
-
-<div class="five">
-<h1 class="text-center">Golden Censer </h1>
-<h3 class="subtitle text-center"> Honey Wheat Ale </h3>
-<hr>
-<img src="img/golden-can.jpg">
-</div>
-</div>
-<div class="column">
-<div class="five">
-<h1 class="text-center"> 6th Seal </h1>
-<h3 class="subtitle text-center"> Chocolate Stout </h3>
-<hr>
-<img src="img/sixth-can.jpg">
-</div>
-
-<div class="five">
-<h1 class="text-center">Hoppocalypse </h1>
-<h3 class="subtitle text-center"> Imperial Red Ale </h3>
-<hr>
-<img src="img/hoppocalypse-can.jpg">
-</div>
-</div>
-
-<div class="column">
-<div class="five">
-<h1 class="text-center"> Cenful Blonde </h1>
-<h3 class="subtitle text-center"> Belgian Style Blonde Ale </h3>
-<hr>
-<img src="img/cenful-can.jpg">
-</div>
-</div>
-<hr>
-<p> We've also got a lineup of 22oz bombers on the horizon!  These will be for our Lustful Maiden, 6th Seal Snack, Heavy Red Horseman, and a collaboration with Devils Backbone called Devils Secret!  Come to our tasting room and try out all of our great brews before we hit stores! </p>
-<img class="responsive-img center-block"style="padding: 10px;" src="img/bomber.jpg">
+  <div id="main-container" class="container">
   </div>
 <div id="footer-container">
 </div>
@@ -114,12 +34,18 @@ $( document ).ready(function() {
         });
         </script>
 <script>
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlNav: "false",
+        $( document ).ready(function() {
+          $("#main-container"). load("news.html");
+        });
+        </script>
+  <script>
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "false",
 
-  });
-});
-</script>
+          });
+        });
+        </script>
+
 </body>
