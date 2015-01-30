@@ -273,13 +273,15 @@ display: none;
 }
 /* End Nav */
 .title {
-  margin-top: -30px;
+  padding-top: 45px;
   padding-bottom: 10px;
   @media screen and (max-width: $break-nav) {
     margin-top: 0px;
+    padding-top: 0px;
   }
   @media (-webkit-min-device-pixel-ratio: 2) and (max-device-width:667px) {
     margin-top: 0px;
+    padding-top: 0px;
   }
 }
 .four {
