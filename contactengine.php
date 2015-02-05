@@ -1,6 +1,6 @@
 <?php
 
-$EmailFrom = "contact_form@endofbadbeer.com ";
+$EmailFrom = "$Email";
 $EmailTo = "djohnjr146@aol.com";
 $Subject = "EndOfBadBeer Inquiry";
 $Name = Trim(stripslashes($_POST['Name']));
@@ -20,7 +20,7 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+$success = mail($EmailTo, $Subject, $Body, "From: <$Email>");
 
 // redirect to success page
 if ($success){
