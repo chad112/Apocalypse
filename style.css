@@ -375,6 +375,21 @@ hr {
   margin-right: auto;
   display: block; }
 
+.news_img {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: block; }
+  @media (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) {
+    .news_img {
+      width: 80%; } }
+  @media screen and (max-width: 600px) {
+    .news_img {
+      width: 80%; } }
+  @media screen and (max-width: 840px) {
+    .news_img {
+      width: 80%; } }
+
 /* Beer Page */
 .five {
   float: left;
